@@ -8,7 +8,7 @@ public class HelloWorldRoute extends RouteBuilder {
 	public void configure() throws Exception {
 		// TODO Auto-generated method stub
 		
-		System.out.println("Hello world in cammel");	
+		System.out.println("Hello world in camel");	
 		
 	}
 
