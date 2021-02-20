@@ -30,7 +30,12 @@ public class ProduceAndConsumeExample {
 					public void process(Exchange exchange) throws Exception {
 						// TODO Auto-generated method stub
 						
-						System.out.println("I am the processor...");
+						String message = exchange.getIn().getBody(String.class);
+						
+						message += " -By Tim Janssens";
+						
+						exchange.getOut().setBody(message);
+						
 						
 						
 					}
